@@ -37,3 +37,13 @@ variable "sa_scopes" {
   description = "Service account scope for the instance"
   default     = ["userinfo-email", "compute-ro", "storage-ro"]
 }
+
+variable "disk_size" {
+  description = "Size of boot disk"
+  default     = 30
+}
+
+variable "disk_type" {
+  description = "Type of boot disk: pd-ssd, pd-standard"
+  default     = "pd-standard"
+}
